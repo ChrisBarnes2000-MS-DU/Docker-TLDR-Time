@@ -1,10 +1,8 @@
-<p align="center"><strong style="color: red;">❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STOP: DO NOT CLONE THIS REPO &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❌</strong><br>Carefully <b>follow the instructions below</b> to ensure you <b>get credit</b> for this assignment.</p>
+# TLDR DOCKERFILE
 
----
+## **Assignment**: 
 
-# 🐳 docker-starter
-
-_Use this required starter pack for all assignments in [BEW 2.2: DevOps, Deployments &amp; Containers](https://make.sc/bew2.2). Follow the instructions below, and submit the resulting repository on [Gradescope](https://make.sc/trackbew2.2) by the assigned due date._
+`Dockerfile`: Install `tldr`. Execute and print `tldr commandname`. Then execute some examples of that command from your research.
 
 ## 📂 Project Files
 
@@ -21,7 +19,7 @@ _Use this required starter pack for all assignments in [BEW 2.2: DevOps, Deploym
 _Builds the `Dockerfile` found at the current path (`.`)._
 
 ```bash
-$ docker build -t IMAGE_NAME .
+$ docker build -t Docker_Tldr .
 ```
 
 ### 2️⃣ Run & Test
@@ -29,5 +27,5 @@ $ docker build -t IMAGE_NAME .
 _Runs the `IMAGE_NAME` image. Deletes the container after executing the `CMD`_.
 
 ```bash
-$ docker run --rm --name CONTAINER_NAME IMAGE_NAME
+$ docker run --rm --name Docker_Tldr_Container Docker_Tldr
 ```
