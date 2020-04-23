@@ -25,10 +25,18 @@ FROM alpine:latest
 # ----------------
 
 # Install zsh giving the built in time command
-RUN apk add zsh
+RUN apk add npm
+RUN npm install -g tldr
 
 # Print Description of time command
-RUN echo ""
+RUN echo "time gives the run time and actual time a command takes when executing"
+
+RUN time ls
+RUN time pwd
+RUN time mkdir test
+
 
 # Run the time command
-CMD [""]
+RUN tldr time
+# CMD time 
+CMD [ "sh", "-c", "time ls ; time pwd" ]
